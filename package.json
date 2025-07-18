@@ -32,10 +32,5 @@
   },
   "eslintConfig": {
     "root": true
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "generators/"
-    ]
   }
 }
