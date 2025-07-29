@@ -1,25 +1,32 @@
-const add = function() {
-	
+const { useReducer } = require("react");
+
+const add = function(num1, num2) {
+	return (num1 + num2);
 };
 
-const subtract = function() {
-	
+const subtract = function(num1, num2) {
+	return (num1 - num2);
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+	return arr.reduce(function(sum, item) {sum += item;return sum;}, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+  return arr.reduce(function(sum, item) {sum = sum * item;return sum;}, 1);
 };
 
-const power = function() {
-	
+const power = function(base, exponent) {
+	return (base ** exponent);
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let res = 1;
+  for (let i = num; i > 0; --i)
+  {
+    res = res * i;
+  }
+  return res;
 };
 
 // Do not edit below this line
